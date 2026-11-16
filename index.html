@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta name="theme-color" content="#0c1511"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="Istiqama"/>
+  <meta name="description" content="Istiqama : tes habitudes quotidiennes, tes prières, tes calendriers et bilans, privés et hors ligne."/>
+  <link rel="manifest" href="manifest.webmanifest"/>
+  <link rel="apple-touch-icon" href="assets/icon-192.png"/>
+  <link rel="icon" type="image/png" href="assets/icon-192.png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Istiqama — Mon quotidien</title>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand"><img class="brand-logo" src="assets/icon-192.png" alt="Logo Istiqama"/><div><span class="eyebrow">ISTIQAMA</span><span class="brand-subtitle">Constance au quotidien</span></div></div>
+      <button type="button" class="icon-button" id="settingsBtn" aria-label="Ouvrir les paramètres" title="Paramètres"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2 2.1 2.9-.5.6 2.8L20 9l-1.2 2.6L20 14l-2.5 1.6-.6 2.8-2.9-.5L12 20l-2-2.1-2.9.5-.6-2.8L4 14l1.2-2.4L4 9l2.5-1.6.6-2.8 2.9.5L12 3z"/><circle cx="12" cy="11.5" r="3"/></svg></button>
+    </header>
+    <main id="content" aria-live="polite"><div class="loading">Chargement d’Istiqama…</div></main>
+    <nav class="bottom-nav" id="navigation" aria-label="Navigation principale"></nav>
+    <div id="modalRoot"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+</html>
